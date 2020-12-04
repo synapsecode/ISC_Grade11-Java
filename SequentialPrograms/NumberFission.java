@@ -20,7 +20,7 @@ public class NumberFission {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		String[] S = new String[1000];
+		String[] S = new String[5000];
 		System.out.print("Enter the Number: ");
 		int N = sc.nextInt();
 		int c = 0;
@@ -43,8 +43,8 @@ public class NumberFission {
 					}
 
 					String number = S[c];
-						if (!number.startsWith("1")) {
-							if (number.contains("1")) {
+						if (!number.startsWith("1 ")) {
+							if (number.contains("1 ")) {
 								S[c] = number.substring(number.split(" ")[0].length() + 1) + " "
 										+ number.substring(0, number.split(" ")[0].length());
 							}
@@ -67,6 +67,9 @@ public class NumberFission {
 				System.out.println(NS[i]);
 		}
 
+		S = null;
+
 		sc.close();
 	}
+
 }

@@ -178,4 +178,17 @@ public class MyDateExtensions {
         return ret;
     }
 
+    static String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+
+    // static String getFirstDayOfYear(int Y){
+    //     //Month starts from March, 1 = March, Jan & Feb are from Previous Year
+    //     //Dec=11, Feb=12
+    //     Y -= 1; //-1 as jan comes as part of previous year
+    //     int C = Y/100;
+    //     Y = Y%100; 
+    //     int K = 1; //FirstDay
+    //     int M = 11; //January
+    //     int W = Math.abs((int)((K + Math.floor(2.6*M - 0.2) - 2*C + Y + Math.floor(Y/4) + Math.floor(C/4))) % 7);
+    //     return days[W];
+    // }
 }
