@@ -16,37 +16,15 @@ public class VerticalDisplay{
 			max_len = (teams[i].length() > max_len) ? teams[i].length() : max_len;
 		}
 
-		//Padding
-		for(int i=0; i<n; i++){
-			String x = teams[i];
-			int padding = max_len - x.length();
-			String p = new String(new char[padding]).replace("\0", "_");
-			teams[i] = (x+p);
-		}
-
-		//Interlacing the String
-		String interlaced = "";
-		int pos = 0;
-		for(int x = 0; x<max_len; x++){
-			for(int i = 0; i<n; i++){
-				String s = teams[i];
-				interlaced += s.charAt(pos);
+		for(int j=0; j<max_len; j++){
+			for(int i=0; i<n; i++){
+				String x = teams[i];
+				if(j < (x.length()))
+					System.out.print(x.charAt(j)+" \t");
+				else
+					System.out.print(" \t");
 			}
-			pos += 1;
-		}
-
-		//Display
-		System.out.println();
-		System.out.println();
-		int ctr = 0;
-		for(int i=0; i<interlaced.length(); i++){
-			if(ctr==n){
-				System.out.println();
-				ctr=0;
-			}
-			String ch = (interlaced.charAt(i) == '_') ? " " : interlaced.charAt(i)+"";
-			System.out.print(ch + "\t");
-			ctr++;
+			System.out.println();
 		}
 		
 	}
