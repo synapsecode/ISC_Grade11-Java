@@ -1,4 +1,5 @@
 /*
+PROGRAM-6
 Kaprekar Number is a number whose sum of the left part and right part of squared number is same
 */
 package OtherPrograms;
