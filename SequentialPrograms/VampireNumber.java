@@ -3,6 +3,8 @@ package SequentialPrograms;
 import java.util.Scanner;
 
 /*
+PROGRAM-12
+
 In number theory, a vampire number (or true vampire number) is a composite natural number with an even
 number of digits, that can be factored into two natural numbers each with half as many digits as the
 original number and not both with trailing zeroes, where the two factors contain precisely all the

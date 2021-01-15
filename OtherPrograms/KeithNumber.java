@@ -1,4 +1,5 @@
 /*
+PROGRAM-8
 KeithNumber - 197 present in sequence hence it is keith
 eg: 197(3Digits) - (1 + (9 + (7) + (17) + (33) + 57) + 107) = 197
 Start: 1 + 9 + 7
@@ -56,5 +57,6 @@ public class KeithNumber {
 			System.out.println(N + " is a Keith Number");
 		else
 			System.out.println(N + " is not a Keith Number");
+		sc.close();
 	}
 }
