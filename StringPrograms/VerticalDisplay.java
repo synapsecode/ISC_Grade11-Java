@@ -26,6 +26,6 @@ public class VerticalDisplay{
 			}
 			System.out.println();
 		}
-		
+		sc.close();
 	}
 }

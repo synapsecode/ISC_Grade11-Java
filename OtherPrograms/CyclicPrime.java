@@ -13,7 +13,7 @@ public class CyclicPrime {
 			}	
 			i++;
 		}
-		return !ret;
+		return (n==1) ? false : !ret;
 	}
 
 	public static boolean isCyclicPrime = true;

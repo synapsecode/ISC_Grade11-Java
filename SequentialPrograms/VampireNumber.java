@@ -86,5 +86,7 @@ public class VampireNumber {
         else
             System.out.println("OUT OF RANGE");
 
+        sc.close();
+
     }
 }

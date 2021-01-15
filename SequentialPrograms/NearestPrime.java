@@ -22,7 +22,7 @@ public class NearestPrime {
 			}	
 			i++;
 		}
-		return !ret;
+		return (n==1) ? false : !ret;
 	}
 
 	public static void leftRightSimultaneousPass(long N){
