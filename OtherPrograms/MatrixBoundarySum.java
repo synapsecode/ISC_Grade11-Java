@@ -28,5 +28,6 @@ public class MatrixBoundarySum {
 			}
 		}
 		System.out.println("\nBoundary Sum: " + sum);
+		sc.close();
 	}
 }

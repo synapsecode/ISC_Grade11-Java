@@ -27,6 +27,7 @@ public class MatrixDiagonalSum {
 
 		System.out.println("Sum of Principal Diagonal: " + pds);
 		System.out.println("Sum of Right Diagonal: " + rds);
+		sc.close();
 	}
 	
 }

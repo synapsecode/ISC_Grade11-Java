@@ -1,3 +1,4 @@
+//Program-20
 package OtherPrograms;
 
 import java.util.Scanner;
@@ -35,5 +36,6 @@ public class MatrixColumnReverse {
 			}
 			System.out.println();
 		}
+		sc.close();
 	}
 }

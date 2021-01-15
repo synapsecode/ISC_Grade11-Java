@@ -35,5 +35,6 @@ public class MatrixBoundaryPrint {
 			}
 			System.out.println();
 		}
+		sc.close();
 	}
 }

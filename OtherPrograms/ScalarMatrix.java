@@ -1,43 +1,51 @@
-//Program-19
+//Program22
 package OtherPrograms;
 
 import java.util.Scanner;
 
-public class SymmetricMatrix {
+public class ScalarMatrix {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter N: ");
 		int n = sc.nextInt();
 		System.out.println();
 		int mat[][] = new int[n][n];
-		int transmat[][] = new int[n][n];
 		// Accepting
-		boolean is_symmetric = true;
 		System.out.println("Enter Elements: ");
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				// Adding Data
 				mat[i][j] = sc.nextInt();
-				transmat[j][i] = mat[i][j];
 			}
 		}
 		System.out.println();
+		int val = 0;
+		boolean isScalar = true;
 		for (int i = 0; i < n; i++) {
-			if (is_symmetric) {
+			if(isScalar)
 				for (int j = 0; j < n; j++) {
-					if (mat[i][j] != transmat[i][j]) {
-						is_symmetric = false;
-						break;
+					int V = mat[i][j];
+					if(i==j){
+						if(i==0) val = V;
+						if(V != val){
+							isScalar = false;
+							break;
+						}
+					}else{
+						if(V != 0){
+							isScalar = false;
+							break;
+						}
 					}
 				}
-			} else
+			else
 				break;
 		}
 
-		if (is_symmetric)
-			System.out.println("Symmetric Matrix");
+		if(isScalar)
+			System.out.println("\nScalar Matrix");
 		else
-			System.out.println("Unsymmetric Matrix");
+			System.out.println("\nNot a Scalar Matrix");
 
 		sc.close();
 	}
