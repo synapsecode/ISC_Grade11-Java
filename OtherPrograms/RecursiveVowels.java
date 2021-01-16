@@ -1,3 +1,4 @@
+//PROGRAM-36
 package OtherPrograms;
 import java.util.Scanner;
 
