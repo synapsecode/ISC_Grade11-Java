@@ -1,18 +1,10 @@
+//Program-48
 package SequentialPrograms;
 import java.util.Scanner;
 
 public class NearestPrime {
 	public static boolean isPrime(long n){
 		boolean ret = false;
-
-		//O(N/2) Approach
-		// for (long i = 2; i <= n / 2; ++i) {
-		// 	if (n % i == 0) {
-		// 		ret = true;
-		// 		break;
-		// 	}
-		// }
-
 		//O(sqrt(N)) Approach
 		long i = 2;
 		while(i*i <= n){
