@@ -2,6 +2,8 @@
 package DatePrograms;
 
 import java.io.*;
+import Common.MyDateExtensions;
+
 public class Calendar extends MyDateExtensions
 {
     static String[] days = {"Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};

@@ -2,6 +2,7 @@
 package DatePrograms;
 
 import java.util.Scanner;
+import Common.MyDateExtensions;
 
 public class FormattedDate extends MyDateExtensions {
 	public static void main(String[] args) {

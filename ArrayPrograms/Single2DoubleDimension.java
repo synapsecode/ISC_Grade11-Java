@@ -3,6 +3,8 @@ package ArrayPrograms;
 
 import java.util.Scanner;
 
+import Common.SharedFunctions;
+
 /*
 SDA a[n]  DDA b[n][n]
 Sort the elements of a[n] with Insertion Sort, then arrange its elements in b[n][n] as follows
@@ -19,7 +21,7 @@ b[][] =
 1212
 1123
 */
-public class Single2DoubleDimension {
+public class Single2DoubleDimension  extends SharedFunctions{
 	static int[] insertionSort(int arr[]) { 
         int n = arr.length; 
         for (int i = 1; i < n; ++i) { 
@@ -58,12 +60,8 @@ public class Single2DoubleDimension {
 			}
 		}
 		System.out.println("\nOutput:");
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < n; j++) {
-				System.out.print(B[i][j] + " ");
-			}
-			System.out.println();
-		}
+		printMatrix(B, " ");
+
 
 		sc.close();
 	}

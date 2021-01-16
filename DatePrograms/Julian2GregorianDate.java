@@ -1,6 +1,7 @@
 //Program-39
 package DatePrograms;
 import java.io.*;
+import Common.MyDateExtensions;
 
 public class Julian2GregorianDate extends MyDateExtensions
 {

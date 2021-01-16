@@ -7,6 +7,7 @@ class Program13{
 
 	public static String[] customSort(String[] arr){
 		//!Yet to implement
+		//!Sort by length, if equal sort alphabetically
 		return arr;
 	}
 

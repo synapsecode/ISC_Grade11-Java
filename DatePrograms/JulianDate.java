@@ -2,6 +2,7 @@
 package DatePrograms;
 
 import java.util.Scanner;
+import Common.MyDateExtensions;
 
 public class JulianDate extends MyDateExtensions
 {
