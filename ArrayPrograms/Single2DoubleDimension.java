@@ -65,6 +65,6 @@ public class Single2DoubleDimension {
 			System.out.println();
 		}
 
-
+		sc.close();
 	}
 }

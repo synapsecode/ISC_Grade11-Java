@@ -56,5 +56,6 @@ public class MatrixRotation {
 
 		int sum = mat[0][0] + mat[0][n-1] + mat[n-1][0] + mat[n-1][n-1];
 		System.out.println("\nSum of Corners: " + sum);
+		sc.close();
 	}
 }

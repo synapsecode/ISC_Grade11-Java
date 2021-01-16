@@ -11,5 +11,6 @@ public class FormattedDate extends MyDateExtensions {
 		String[] splits = (date.split("/"));
 		int month = Integer.parseInt(splits[1]);
 		System.out.println("\nFormatted Date: " + splits[0] + "/" + months[month - 1] + "/" + splits[2]);
+		sc.close();
 	}
 }
